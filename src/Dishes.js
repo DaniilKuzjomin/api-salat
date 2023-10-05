@@ -1,11 +1,92 @@
-import React from 'react';
-import './App.css'; // Импортируйте файл стилей
+import React, { useState } from 'react';
+import './App.css';
 
 function Dishes() {
+  const [dishData, setDishData] = useState({
+    name: '',
+    description: '',
+    recipe: '',
+    ingredients: [''], // Начальное поле для ингредиентов
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setDishData({ ...dishData, [name]: value });
+  };
+
+  const handleAddIngredient = () => {
+    setDishData({ ...dishData, ingredients: [...dishData.ingredients, ''] });
+  };
+
+  const handleIngredientChange = (index, value) => {
+    const updatedIngredients = [...dishData.ingredients];
+    updatedIngredients[index] = value;
+    setDishData({ ...dishData, ingredients: updatedIngredients });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Здесь вы можете отправить данные о блюде на сервер или выполнить другие действия
+    // Например, вы можете использовать dishData для отправки данных о блюде
+  };
+
   return (
-    <div>
+    <div className="Dishes">
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h5>
       <h2>Dishes Page</h2>
-      {/* Добавьте контент для страницы блюд и рецептов */}
+      <h3>Here you can share your recipes with other people!</h3>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>Name:</label>
+          <br></br>
+          <input
+            type="text"
+            name="name"
+            value={dishData.name}
+            onChange={handleInputChange}
+          />
+        </div>
+        <br></br>
+        <div>
+          <label>Description:</label>
+          <br></br>
+          <textarea
+            name="description"
+            value={dishData.description}
+            onChange={handleInputChange}
+          />
+        </div>
+        <br></br>
+        <div>
+          <label>Recipe:</label>
+          <br></br>
+          <textarea
+            name="recipe"
+            value={dishData.recipe}
+            onChange={handleInputChange}
+          />
+        </div>
+        <br></br>
+        <div>
+          <label>Ingredients:</label>
+          {dishData.ingredients.map((ingredient, index) => (
+            <div key={index}>
+              <input
+                type="text"
+                value={ingredient}
+                onChange={(e) => handleIngredientChange(index, e.target.value)}
+              />
+            </div>
+          ))}
+          <button type="button" className="add-ingredient-button" onClick={handleAddIngredient}>
+            Add Ingredient
+          </button>
+          <button type="submit" className="submit-button">Add Dish</button>
+          <br></br>
+          <br></br>
+          <br></br>
+        </div>
+      </form>
     </div>
   );
 }

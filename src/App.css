@@ -1,3 +1,7 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background-color: #111;
@@ -9,10 +13,9 @@ body {
   min-height: 100vh;
 }
 
-
 .App {
   text-align: center;
-  flex-grow: 1; 
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
@@ -21,7 +24,7 @@ body {
   background-color: #333;
   padding: 20px;
   text-align: center;
-  width: 100%
+  width: 100%;
 }
 
 .button-container {
@@ -48,4 +51,122 @@ body {
 .button.active {
   background-color: #555;
   transform: translateY(0);
+}
+
+.Products {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.Products h2 {
+  font-size: 24px;
+}
+
+.Products h3 {
+  font-size: 18px;
+}
+
+.Products label {
+  display: block;
+  margin-top: 10px;
+}
+
+.Products input {
+  width: 400px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.Products button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.Products button:hover {
+  transform: translateY(-5px);
+}
+
+.Dishes {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.Dishes h2 {
+  font-size: 24px;
+}
+
+.Dishes form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Dishes label {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.Dishes input[type="text"] {
+  width: 400px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.Dishes textarea {
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  width: 400px;
+  height: 200px;
+  resize: none;
+}
+
+.Dishes .ingredients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Dishes .ingredient-input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.Dishes .add-ingredient-button,
+.Dishes .submit-button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.Dishes .add-ingredient-button:hover,
+.Dishes .submit-button:hover {
+  transform: translateY(-5px);
+}
+
+.Dishes h5 {
+  color: #111;
+  user-select: none;
+}
+
+.Products h5 {
+  color: #111;
+  user-select: none;
 }
