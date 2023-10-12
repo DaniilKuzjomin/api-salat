@@ -32,7 +32,6 @@ function Dishes() {
 
   return (
     <div className="Dishes">
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h5>
       <h2>Dishes Page</h2>
       <h3>Here you can share your recipes with other people!</h3>
       <form onSubmit={handleSubmit}>
@@ -83,6 +82,7 @@ function Dishes() {
           </button>
           <button type="submit" className="submit-button">Add Dish</button>
           <br></br>
+          <h2>Added dishes and their recipes:</h2>
           <br></br>
           <br></br>
         </div>
