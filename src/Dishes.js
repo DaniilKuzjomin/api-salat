@@ -40,6 +40,7 @@ function Dishes() {
           <br></br>
           <input
             type="text"
+            placeholder='Write here your dish name...'
             name="name"
             value={dishData.name}
             onChange={handleInputChange}
@@ -51,6 +52,7 @@ function Dishes() {
           <br></br>
           <textarea
             name="description"
+            placeholder='Write here your dish description'
             value={dishData.description}
             onChange={handleInputChange}
           />
@@ -61,6 +63,7 @@ function Dishes() {
           <br></br>
           <textarea
             name="recipe"
+            placeholder='Write your dish recipe here...'
             value={dishData.recipe}
             onChange={handleInputChange}
           />
@@ -72,6 +75,7 @@ function Dishes() {
             <div key={index}>
               <input
                 type="text"
+                placeholder='Write here your dish ingridient...'
                 value={ingredient}
                 onChange={(e) => handleIngredientChange(index, e.target.value)}
               />

@@ -41,6 +41,9 @@ body {
   padding: 10px 20px;
   margin: 10px;
   cursor: pointer;
+  height: 140px;
+  width: 340px;
+  font-size: 35px;
   transition: transform 0.2s;
 }
 
@@ -65,18 +68,20 @@ body {
 }
 
 .Products h3 {
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .Products label {
   display: block;
   margin-top: 10px;
+  font-size: 25px;
 }
 
 .Products input {
   width: 400px;
   padding: 5px;
   margin-top: 5px;
+  font-size: 18px;
 }
 
 .Products button {
@@ -88,6 +93,7 @@ body {
   cursor: pointer;
   transition: transform 0.2s;
   margin-left: 5px;
+  font-size: 20px;
 }
 
 .Products button:hover {
@@ -112,7 +118,7 @@ body {
 }
 
 .Dishes label {
-  font-size: 18px;
+  font-size: 25px;
   margin-top: 10px;
 }
 
@@ -121,6 +127,7 @@ body {
   padding: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
+  font-size: 18px;
 }
 
 .Dishes textarea {
@@ -130,6 +137,7 @@ body {
   width: 400px;
   height: 200px;
   resize: none;
+  font-size: 18px;
 }
 
 .Dishes .ingredients {
@@ -155,6 +163,7 @@ body {
   margin-right: 10px;
   cursor: pointer;
   transition: transform 0.2s;
+  font-size: 20px;
 }
 
 .Dishes .add-ingredient-button:hover,
@@ -188,6 +197,8 @@ body {
 
 .Products th, .Products td {
   padding: 10px;
+  width: 70px;
+  height: 70px;
   border: 1px solid #444;
 }
 

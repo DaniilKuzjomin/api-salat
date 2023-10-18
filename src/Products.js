@@ -8,27 +8,27 @@ function Products() {
       <h3>Write product information per 100g of product</h3>
       <div>
         <label>Name:</label>
-        <input type="text" id="name" />
+        <input placeholder='Write ingridient name here...' type="text" id="name" />
       </div>
       <div>
         <label>Carbs:</label>
-        <input type="text" id="carbs" />
+        <input placeholder='Write how much carbs in ingridient per 100g...' type="text" id="carbs" />
       </div>
       <div>
         <label>Protein:</label>
-        <input type="text" id="protein" />
+        <input placeholder='Write how much proteins in ingridient per 100g...' type="text" id="protein" />
       </div>
       <div>
         <label>Fats:</label>
-        <input type="text" id="fats" />
+        <input placeholder='Write how much fats in ingridient per 100g...' type="text" id="fats" />
       </div>
       <div>
         <label>Sugar:</label>
-        <input type="text" id="sugar" />
+        <input placeholder='Write how much sugar in ingridient per 100g...' type="text" id="sugar" />
       </div>
       <div>
         <label>Salt:</label>
-        <input type="text" id="salt" />
+        <input placeholder='Write how much salt in ingridient per 100g...' type="text" id="salt" />
       </div>
       <button>Add Product</button>
       
