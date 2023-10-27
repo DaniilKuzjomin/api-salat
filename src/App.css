@@ -176,6 +176,37 @@ body {
   user-select: none;
 }
 
+
+.Dishes select {
+  width: 400px;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.Dishes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Dishes li {
+  font-size: 20px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.Dishes .remove-ingredient-button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
 .Products h5 {
   color: #111;
   user-select: none;
@@ -213,4 +244,31 @@ body {
 .Products tr:nth-child(odd) {
   background-color: #666;
 }
+
+/* Ваши существующие стили */
+
+.dishingredient-item {
+  background-color: #444;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.dishingredient-item h3 {
+  color: #fff;
+  font-size: 24px;
+}
+
+.dishingredient-item p {
+  color: #ddd;
+}
+
+.dishingredient-ingredients {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #ddd;
+}
+
 
